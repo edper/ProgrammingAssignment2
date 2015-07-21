@@ -1,7 +1,10 @@
-## This program will try store a matrix
-## functions do
+## This program will demo the concept of Lexical Scoping
+## using the <<- operators which allows you to store and alter
+## values of an object from a parent function inside the
+## enclosure (i.e. a function written inside a function)
 
-## Write a short comment describing this function
+## This function allows you to store and retrieve the matrix
+## along with the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -18,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function will return the inverse of a matrix
+## if it alread existed in memory otherwise it will be computed
+## and set the value of the inverse matrix in MakeCacheMatrix function
 
 cacheSolve <- function(x, ...) {
   
